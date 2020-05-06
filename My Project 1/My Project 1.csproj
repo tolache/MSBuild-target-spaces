@@ -49,5 +49,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <Target Name="Tola Target" >
+    <Message Text="First occurrence" />
+  </Target>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
