@@ -53,5 +53,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <Target Name="Tola Target 1">
+    <Message Text="Occurrence in project 2" />
+  </Target>
+  <Target Name="Tola Target 2">
+    <Message Text="Occurrence in project 2" />
+  </Target>
+  <Target Name="TolaNoSpaceTarget">
+    <Message Text="Occurrence in project 2" />
+  </Target>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
