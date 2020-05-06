@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,13 +53,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <Target Name="Tola Target 1" >
+  <Target Name="Tola Target 1">
     <Message Text="First occurrence" />
   </Target>
-  <Target Name="Tola Target 2" >
+  <Target Name="Tola Target 2">
     <Message Text="First occurrence" />
   </Target>
-  <Target Name="TolaNoSpaceTarget" >
+  <Target Name="TolaNoSpaceTarget">
     <Message Text="First occurrence" />
   </Target>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
