@@ -22,6 +22,10 @@ namespace My_Project_1
             if (i == null)
             {
                 numbers.Add(i = 17);
+            }
+            
+            if (i == null)
+            {
                 numbers.Add(i = 20);
             }
 
