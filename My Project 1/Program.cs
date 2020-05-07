@@ -11,12 +11,19 @@ namespace My_Project_1
     {
         static void Main(string[] args)
         {
-            List<int> numbers = null;
+            List<int?> numbers = null;
             int? i = null;
 
-            numbers ??= new List<int>();
-            numbers.Add(i ??= 17);
-            numbers.Add(i ??= 20);
+            if (numbers == null)
+            {
+                numbers = new List<int?>();
+            }
+
+            if (i == null)
+            {
+                numbers.Add(i = 17);
+                numbers.Add(i = 20);
+            }
 
             Console.WriteLine(string.Join(" ", numbers));  // output: 17 17
             Console.WriteLine(i);  // output: 17
